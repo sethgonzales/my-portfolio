@@ -19,9 +19,6 @@ const ProjectList = ({ projects, onSelectProject }) => {
           </ul>
         </div>
       </div>
-      <div className="project-details">
-        {/* Project details content */}
-      </div>
     </div>
   );
 };
