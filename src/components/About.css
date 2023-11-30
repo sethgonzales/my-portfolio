@@ -1,0 +1,10 @@
+.about {
+  background-color: #3b2e5a; /* Dark blue/purple */
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20px;
+}
