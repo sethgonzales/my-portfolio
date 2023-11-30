@@ -9,7 +9,7 @@ const AtomAnimation = () => {
     // Initialize Three.js components
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 3;
+    camera.position.z = 1.5;
 
     const renderer = new THREE.WebGLRenderer({ alpha: true }); // Set alpha to true
     renderer.setClearColor(0x000000, 0); // 0 alpha for the background
@@ -19,7 +19,7 @@ const AtomAnimation = () => {
     containerRef.current.appendChild(renderer.domElement);
     rendererRef.current = renderer; // Save reference for cleanup
 
-    const ringGeometry = new THREE.RingGeometry(0.892, 0.9, 64, 8, 0, Math.PI * 2);
+    const ringGeometry = new THREE.RingGeometry(0.892, 0.9, 128, 8, 0, Math.PI * 2);
     const ringMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide });
 
     const rings = []; // Array to store ring meshes
@@ -33,7 +33,7 @@ const AtomAnimation = () => {
       rings.push({ mesh: ringMesh, speed: rotationSpeeds[i] });
     }
 
-    // Set up animation loop for ring rotation
+    // Set up anim ation loop for ring rotation
     const animate = () => {
       requestAnimationFrame(animate);
 

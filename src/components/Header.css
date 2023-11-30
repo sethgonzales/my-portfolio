@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff00; /* Add your header background color */
+  background-color: #ffffff00; 
   z-index: 999;
 }
 
@@ -21,11 +21,28 @@
 
 .nav-links a {
   text-decoration: none;
-  color: white; /* Add your link color */
-  font-weight: bold; /* Adjust link font-weight if needed */
+  color: white; 
+  font-weight: bold; 
 }
 
 .nav-links a:hover{
 cursor: pointer;
-color: yellow;
+color: rgb(252, 200, 57);
 }
+
+.nav-links a.active {
+  color: rgb(252, 200, 57)
+}
+
+.nav-links a.active.about ~ li:not(.about) a {
+  color: black;
+}
+
+.nav-links a.active.about ~ li.home a {
+  color: black;
+}
+
+.nav-links a.active.about ~ li.projects a {
+  color: black;
+}
+

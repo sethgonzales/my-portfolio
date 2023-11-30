@@ -7,6 +7,7 @@ const Header = () => {
     scroll.scrollTo(id, {
       duration: 800,
       smooth: 'easeInOutQuart',
+      offset: -70,
     });
   };
 
@@ -29,19 +30,6 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="about"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={800}
-              onClick={() => scrollToSection('about')}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
               to="projects"
               activeClass="active"
               spy={true}
@@ -51,6 +39,19 @@ const Header = () => {
               onClick={() => scrollToSection('projects')}
             >
               Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="about"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              onClick={() => scrollToSection('about')}
+            >
+              About
             </Link>
           </li>
         </ul>

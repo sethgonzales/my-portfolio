@@ -1,10 +1,40 @@
+@import url('https://fonts.cdnfonts.com/css/beta54');
+
+/* Styles for the header */
 .about {
-  background-color: #3b2e5a; /* Dark blue/purple */
-  color: white;
-  height: 100vh;
+  background-color: #ffE4C4;
+  height: 95vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 20px;
+  justify-content: flex-start;
+  padding: 0 50px;
+}
+
+.about-right-column {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  padding: 0 4% 0;
+}
+
+.about-right-column p {
+  font-size: 20px;
+  /* Adjust text size as needed */
+}
+
+.about-left-column {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  padding: 0 4% 0;
+}
+
+.about-left-column h1 {
+  font-family: 'Beta54', sans-serif;
+  color: rgb(81, 46, 25);
+  line-height: 75px;
+  font-size: 100px;
+  font-weight: lighter;
+  text-align: center;
 }
