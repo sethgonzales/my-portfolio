@@ -1,10 +1,11 @@
-/* Styles for the header */
+@import url('https://fonts.cdnfonts.com/css/phosphorus-bromide');
+
 .fixed-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff00; 
+  background-color: rgba(0, 0, 0, 0.437); 
   z-index: 999;
 }
 
@@ -21,17 +22,20 @@
 
 .nav-links a {
   text-decoration: none;
+  font-family: 'Phosphorus Sulphide', sans-serif;
+
   color: white; 
   font-weight: bold; 
 }
 
 .nav-links a:hover{
 cursor: pointer;
-color: rgb(252, 200, 57);
+/* color: rgb(177, 239, 215); */
+color: rgb(254,213,46);
 }
 
 .nav-links a.active {
-  color: rgb(252, 200, 57)
+  color: rgb(254,213,46);
 }
 
 .nav-links a.active.about ~ li:not(.about) a {

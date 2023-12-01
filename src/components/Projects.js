@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ProjectList from './ProjectList';
 import ProjectDetails from './ProjectDetails';
+import EOL from './../img/eol-chat.png'
+import ChemEdSimulations from './../img/chemed.png'
 import './Projects.css';
 
 
@@ -9,17 +11,17 @@ const Projects = () => {
     // Your project data
     {
       id: 1,
-      title: 'Project 1',
-      image: 'path/to/image1.jpg',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
-      // Other details...
+      className: 'ChemEd',
+      title: 'ChemEd Simulations',
+      image: ChemEdSimulations,
+      description: 'ChemEd Simulations is an educational platform for students to access science related simulations. This is a full stack application using React, Firestore, JavaScript, CSS, and HTML',
     },
     {
       id: 2,
-      title: 'Project 2',
-      image: 'path/to/image2.jpg',
-      description: 'Description of Project 2',
-      // Other details...
+      className: 'EOL',
+      title: 'EOL - Epicodus Online',
+      image: EOL,
+      description: 'Epicodus Online is a recreation of AOL/s Instant Messanger. This MVC application is built with Identity,  employing JavaScript for front-end logic and C# and SQL for back-end logic and database. SignalR is used for real-time messaging functionality in public and private chat rooms',
     },
     // Add more projects...
   ];

@@ -21,7 +21,7 @@ const Header = () => {
               activeClass="active"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-50}
               duration={800}
               onClick={() => scrollToSection('home')}
             >
@@ -34,7 +34,7 @@ const Header = () => {
               activeClass="active"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-50}
               duration={800}
               onClick={() => scrollToSection('projects')}
             >
@@ -47,7 +47,7 @@ const Header = () => {
               activeClass="active"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-50}
               duration={800}
               onClick={() => scrollToSection('about')}
             >

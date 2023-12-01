@@ -2,11 +2,17 @@ import React from 'react';
 
 const ProjectDetails = ({ project }) => {
   return (
-    <div>
-      <h2>{project.title}</h2>
-      <img src={project.image} alt={project.title} />
-      <p>{project.description}</p>
-      {/* Other project details */}
+<div className={project.className}>
+      <div className="project-details-container">
+        <div className="project-left-column">
+          <img src={project.image} alt={project.title} />
+        </div>
+        <div className="project-right-column">
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
+          {/* Other project details */}
+        </div>
+      </div>
     </div>
   );
 };

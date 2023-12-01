@@ -8,7 +8,7 @@ const ProjectList = ({ projects, onSelectProject }) => {
   return (
     <div className="projects-container">
       <div className="projects-column">
-        <h2>Projects</h2>
+        <h1>Projects</h1>
         <div className="project-list">
           <ul>
             {projects.map((project) => (

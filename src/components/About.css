@@ -1,8 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/beta54');
+/* @import url('https://fonts.cdnfonts.com/css/beta54'); */
+@import url('https://fonts.cdnfonts.com/css/phosphorus-bromide');
 
 /* Styles for the header */
 .about {
-  background-color: #ffE4C4;
+  /* background-color: #d9ede0; */
+  background-color: rgb(234, 208, 188);
   height: 95vh;
   display: flex;
   justify-content: flex-start;
@@ -31,8 +33,9 @@
 }
 
 .about-left-column h1 {
-  font-family: 'Beta54', sans-serif;
-  color: rgb(81, 46, 25);
+  /* font-family: 'Beta54', sans-serif; */
+  font-family: 'Phosphorus Bromide', sans-serif;
+  color: rgb(79, 48, 28);
   line-height: 75px;
   font-size: 100px;
   font-weight: lighter;
