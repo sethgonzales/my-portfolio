@@ -26,7 +26,7 @@ const Projects = () => {
     // Add more projects...
   ];
 
-  const [selectedProject, setSelectedProject] = useState(projects[0]); 
+  const [selectedProject, setSelectedProject] = useState(projects[0]);
 
   const handleSelectProject = (projectId) => {
     const project = projects.find((proj) => proj.id === projectId);
@@ -35,7 +35,7 @@ const Projects = () => {
 
 
   return (
-    <div id="projects" className="projects-container">
+    <div id="projects" className="projects projects-container">
       <ProjectList projects={projects} onSelectProject={handleSelectProject} />
       <div className="project-details-container">
         {selectedProject && (

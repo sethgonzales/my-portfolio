@@ -1,15 +1,25 @@
-@import url('https://fonts.cdnfonts.com/css/phosphorus-bromide');
+/* @import url('https://fonts.cdnfonts.com/css/phosphorus-bromide'); */
 
+
+@keyframes AnimationName {
+  0%{background-position:17% 0%}
+  50%{background-position:84% 100%}
+  100%{background-position:17% 0%}
+}
+.projects {
+  background: linear-gradient(80deg, #f30404, #260b85, #5820b1);
+  background-size: 600% 600%;
+  animation: AnimationName 13s ease infinite;
+}
 .projects-container {
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
   display: flex;
   flex-direction: row;
-  align-items: center; 
+  align-items: center;
   gap: 10px;
   padding: 4% 2%;
-
 }
 
 .projects-container img {
@@ -17,20 +27,18 @@
   padding: 6%;
 }
 
-.projects-column {
+.projects-list-column {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 400px;
 }
 
 .projects-container h1 {
-  font-family: 'Phosphorus Bromide', sans-serif;
   font-size: 90px;
   line-height: 74px;
   margin: 0px;
   padding-left: 20px;
   align-self: flex-start;
-  color: black;
 }
 
 .project-list ul {
@@ -39,62 +47,76 @@
 }
 
 .project-list li {
-  font-family: 'Phosphorus Sulphide', sans-serif;
   font-weight: bold;
   cursor: pointer;
   padding: 5px;
   margin-left: -20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .project-list li:hover {
-  color: rgb(53, 95, 78);
+  color: rgb(254, 213, 46);
 }
 
-.project-list a.active {
-  color: rgb(53, 95, 78);
+.project-list li.selected {
+  color: rgb(254, 213, 46);
 }
 
 .project-details-container {
   display: flex;
-  width: 100%;
-  gap: 20px; 
-  border: solid 1px rgba(0, 0, 0, 0);
+  /* background-color: rgb(39, 37, 37); */
+  background-color: #501da13a;
+  border-radius: 5px;
+  border: solid 1.5px #6b29d53a;
+  width: 900px;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+
 }
 
-.project-left-column img {
-  width: 400px;
-  height: auto;
+.project-details-container:hover{
+  background-color: #6b29d53a;
+  /* box-shadow: 0 0 50px #ffffff2f; */
+  cursor: pointer;
 }
 
-.project-right-column {
-  flex: 1; 
-  
-}
-
-.project-details-container p, h2{
+.project-details-container p,
+h2 {
   text-align: left;
   padding-right: 25px;
   padding-left: 30px;
+  
   color: rgb(255, 255, 255);
 }
 
-.project-details-container h2{
-font-size: 250%;
+.project-details-container h2 {
+  font-size: 250%;
+  margin: 0;
+}
+.project-details-container:hover h2{
+  color: rgb(254, 213, 46);
+
 }
 
-.project-details-container p{
-font-size: 120%;
+.project-details-container p {
+  font-size: 120%;
+}
+
+.project-details-left-column {
+  flex: 1;
+  width: 50%;
+}
+
+.project-details-right-column {
+  flex: 1;
+  width: 50%;
 }
 
 .ChemEd {
-  background-color: #7B51A9;
-  border-radius: 5px;
-  box-shadow: 10px 10px rgba(20, 29, 63, 0.471)
+
 }
 
-.EOL {
-  background-color: #415CC6;
-  border-radius: 5px;
-  box-shadow: 10px 10px rgba(40, 57, 124, 0.471)
+.EOL img{
+
 }

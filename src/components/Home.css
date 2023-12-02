@@ -1,6 +1,6 @@
 /* @import url('https://fonts.cdnfonts.com/css/kollektif'); */
 /* @import url('https://fonts.cdnfonts.com/css/phosphorus-bromide'); */
-@import url('https://fonts.cdnfonts.com/css/ac-framed');
+/* @import url('https://fonts.cdnfonts.com/css/ac-framed'); */
 
 
 @keyframes brushStroke {
@@ -14,26 +14,23 @@
 }
 
 .home {
-  background-color: rgb(18, 17, 17);
+  /* background-color: rgb(18, 17, 17); */
   color: white;
   height: 100vh;
   display: flex;
   overflow: hidden;
-  /* font-family: 'Kollektif', sans-serif; */
-  /* font-family: 'Phosphorus Iodide', sans-serif; */
-  font-family: 'AC Framed', sans-serif;
 }
 
 .home h1 {
   overflow: hidden;
-  font-size: 100px;
+  font-size: 90px; 
   line-height: 74px;
-  font-weight: 100;
   margin: 0;
   float: left;
   padding: 10px;
   position: relative;
   z-index: 2;
+
 }
 
 .home h1::after {
@@ -43,22 +40,17 @@
   left: 0;
   height: 100%;
   width: 0;
-  /* background: rgb(53, 95, 78); */
-  /* background: rgb(126,34,41); */
-  /* background: rgb(128, 115, 76); */
-  /* background: rgba(254, 212, 46, 0.453); */
   animation: brushStroke 1.5s ease forwards;
   z-index: -1;
 }
 
 .home p {
-  font-size: 28px;
+  font-size: 30px;
   letter-spacing: 5px;
   line-height: 74px;
-  font-weight: 100;
+  padding-left: 15px;
   margin: 0;
-  /* font-family: 'Phosphorus Sulphide', sans-serif; */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -10px;
   float: left;
   order: 3;
 }
