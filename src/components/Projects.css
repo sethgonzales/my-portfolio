@@ -7,9 +7,9 @@
   100%{background-position:17% 0%}
 }
 .projects {
-  background: linear-gradient(80deg, #f30404, #260b85, #5820b1);
+  background: linear-gradient(80deg, #f30404, #1b0470, #5820b1);
   background-size: 600% 600%;
-  animation: AnimationName 13s ease infinite;
+  animation: AnimationName 10s ease infinite;
 }
 .projects-container {
   height: 100vh;
@@ -113,10 +113,10 @@ h2 {
   width: 50%;
 }
 
-.ChemEd {
+/* .ChemEd {
 
 }
 
 .EOL img{
 
-}
+} */
