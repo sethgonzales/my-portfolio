@@ -1,18 +1,33 @@
 /* @import url('https://fonts.cdnfonts.com/css/phosphorus-bromide'); */
 
 
-@keyframes AnimationName {
-  0%{background-position:17% 0%}
-  50%{background-position:84% 100%}
-  100%{background-position:17% 0%}
+@keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  /* Start position - Top left */
+  50% {
+    background-position: 100% 50%;
+  }
+
+  /* Mid position - Towards the top right */
+  100% {
+    background-position: 0% 0%;
+  }
+
+  /* Return to start position */
 }
+
+
 .projects {
-  background: linear-gradient(80deg, #f30404, #1b0470, #5820b1);
-  background-size: 600% 600%;
-  animation: AnimationName 10s ease infinite;
+  background: linear-gradient(120deg, #ff3f3f6c, #12011a, #044f376c);
+  background-size: 200% 200%;
+  animation: BackgroundAnimation 20s ease infinite;
 }
+
 .projects-container {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-wrap: nowrap;
   display: flex;
@@ -64,19 +79,27 @@
 
 .project-details-container {
   display: flex;
-  /* background-color: rgb(39, 37, 37); */
-  background-color: #501da13a;
-  border-radius: 5px;
-  border: solid 1.5px #6b29d53a;
+  background-color: #2b0f5927;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border: solid 1.5px #3b374023;
   width: 900px;
   gap: 20px;
-  align-items: center;
-  position: relative;
-
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
 }
 
-.project-details-container:hover{
-  background-color: #6b29d53a;
+.project-details {
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.project-details-container:hover {
+  background-color: #47454536;
   /* box-shadow: 0 0 50px #ffffff2f; */
   cursor: pointer;
 }
@@ -86,7 +109,7 @@ h2 {
   text-align: left;
   padding-right: 25px;
   padding-left: 30px;
-  
+
   color: rgb(255, 255, 255);
 }
 
@@ -94,7 +117,8 @@ h2 {
   font-size: 250%;
   margin: 0;
 }
-.project-details-container:hover h2{
+
+.project-details-container:hover h2 {
   color: rgb(254, 213, 46);
 
 }

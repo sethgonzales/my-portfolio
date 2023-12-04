@@ -37,7 +37,7 @@ const Projects = () => {
   return (
     <div id="projects" className="projects projects-container">
       <ProjectList projects={projects} onSelectProject={handleSelectProject} />
-      <div className="project-details-container">
+      <div className='project-details'>
         {selectedProject && (
           <ProjectDetails project={selectedProject} />
         )}
