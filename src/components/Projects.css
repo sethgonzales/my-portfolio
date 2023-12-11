@@ -21,7 +21,7 @@
 
 /* ---------------- Project Component General ---------------- */
 .projects {
-  background: linear-gradient(120deg, #fc48486c, #12011a, #044f376c);
+  background: linear-gradient(120deg, #044f376c, #12011a, #fc48486c);
   background-size: 200% 200%;
   animation: BackgroundAnimation 20s ease infinite;
 }
