@@ -1,24 +1,5 @@
 
-/* ---------------- Project Details/Right Side ---------------- */
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in-out;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
-
-
+/* ---------------- Project Details Container ---------------- */
 .project-details-container {
   align-items: center;
   justify-content: center; 
@@ -26,11 +7,12 @@
   width: 85%;
   margin: auto;
   padding: 20px;
-  background-color: #2b0f594c;
+  background-color: #38275329;
   border-top-right-radius: 80px;
   border-bottom-left-radius: 80px;
   border: solid 1.5px #3b374023;
   gap: 20px;
+  box-shadow: 0 0 50px #ffffff17;
   transition: background-color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
 }
 
@@ -40,31 +22,53 @@
   margin: auto;
 }
 
+.project-details-container:hover {
+  background-color: #3b2e5027;
+  box-shadow: 0 0 50px #ffffff2f;
+}
+
+/* ---------------- Project Details Left Side ---------------- */
+
 .project-details-left-column {
   flex: 1;
   width: 50%;
 }
 
+.project-details-container img {
+  width: 90%;
+  padding: 4%;
+}
+
+.code-used {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 4px;
+
+}
+
+.code-tag {
+  width: 50px;
+  text-align: center;
+  background-color: #3d226862;
+  border: solid 1.5px #615a6963;
+  border-radius: 20px;
+  color: white;
+  padding: 4px;
+  margin-right: 10px;
+}
+
+.code-tag:hover  {
+  color: #2ed8fe;
+  transition: color .3s ease-in-out;
+  cursor: default;
+}
+
+/* ---------------- Project Details Left Side ---------------- */
+
 .project-details-right-column {
   flex: 1;
   width: 50%;
-}
-
-.project-details-container:hover {
-  background-color: #3a285727;
-  box-shadow: 0 0 50px #ffffff2f;
-}
-
-.project-details-container p,
-h2 {
-  text-align: left;
-  padding-right: 25px;
-  padding-left: 30px;
-}
-
-.project-details-container h2 {
-  font-size: 250%;
-  margin: 0;
 }
 
 .project-details-container:hover h2 {
@@ -72,14 +76,23 @@ h2 {
   transition: color 1s ease-in-out;
 }
 
+.project-details-container p,
+h2 {
+  text-align: left;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.project-details-container h2 {
+  font-size: 250%;
+  margin: 0;
+}
+
+
 .project-details-container p {
   font-size: 120%;
 }
 
-.project-details-container img {
-  width: 90%;
-  padding: 6%;
-}
 
 .project-links {
   width: 90%;
@@ -99,10 +112,11 @@ h2 {
 }
 
 .project-link:hover {
-  width: 40%;
   background-color: #4745456e;
   color: #fed52e;
   transition: color 0.3s ease-in-out;
   border: solid 1.5px #68646c63;
   cursor: pointer;
 }
+
+
