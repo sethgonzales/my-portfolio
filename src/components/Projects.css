@@ -70,11 +70,11 @@
 }
 
 .project-list li:hover {
-  color: rgb(254, 213, 46);
+  color: #fed52e;
 }
 
 .project-list li.selected {
-  color: rgb(254, 213, 46);
+  color: #fed52e;
 }
 
 .project-details-container {
@@ -99,7 +99,7 @@
 
 
 .project-details-container:hover {
-  background-color: #47454536;
+  background-color: #4745456e;
   /* box-shadow: 0 0 50px #ffffff2f; */
   cursor: pointer;
 }
