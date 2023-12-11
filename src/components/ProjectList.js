@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './ProjectList.css';
+
 
 const ProjectList = ({ projects, onSelectProject }) => {
   const [selectedProjectId, setSelectedProjectId] = useState(projects[0].id);

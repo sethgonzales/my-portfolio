@@ -2,19 +2,7 @@
 /* @import url('https://fonts.cdnfonts.com/css/phosphorus-bromide'); */
 /* @import url('https://fonts.cdnfonts.com/css/ac-framed'); */
 
-
-@keyframes brushStroke {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
 .home {
-  /* background-color: rgb(18, 17, 17); */
   color: white;
   height: 100vh;
   display: flex;
@@ -40,17 +28,15 @@
   left: 0;
   height: 100%;
   width: 0;
-  animation: brushStroke 1.5s ease forwards;
   z-index: -1;
 }
 
 .home p {
   font-size: 30px;
   letter-spacing: 5px;
-  line-height: 74px;
   padding-left: 15px;
   margin: 0;
-  margin-top: -10px;
+  margin-top: 10px;
   float: left;
   order: 3;
 }

@@ -1,0 +1,54 @@
+/* ---------------- Project List/Left Side ---------------- */
+.projects-list-column {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.projects-container h1 {
+  font-size: 90px;
+  line-height: 74px;
+  margin: 0px;
+  padding-left: 20px;
+  align-self: flex-start;
+}
+
+.project-list ul {
+  list-style: none;
+  text-align: left;
+}
+
+.project-list li {
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: -20px;
+  font-size: 25px;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+/* styling of line under list items */
+.project-list li::after { 
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; 
+  height: 2px;
+  background-color: #fed52e; 
+  transition: width 0.3s ease-in-out; 
+}
+
+.project-list li.selected::after  {
+  width: 80%; 
+}
+
+.project-list li:hover {
+  color: #fed52e;
+}
+
+.project-list li.selected {
+  color: #fed52e;
+}

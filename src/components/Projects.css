@@ -1,27 +1,22 @@
-/* @import url('https://fonts.cdnfonts.com/css/phosphorus-bromide'); */
-
+/* ---------------- Background Animation ---------------- */
 
 @keyframes BackgroundAnimation {
   0% {
     background-position: 0% 0%;
   }
 
-  /* Start position - Top left */
   50% {
     background-position: 100% 50%;
   }
 
-  /* Mid position - Towards the top right */
   100% {
     background-position: 0% 0%;
   }
-
-  /* Return to start position */
 }
 
-
+/* ---------------- Project Component General ---------------- */
 .projects {
-  background: linear-gradient(120deg, #ff3f3f6c, #12011a, #044f376c);
+  background: linear-gradient(120deg, #fc48486c, #12011a, #044f376c);
   background-size: 200% 200%;
   animation: BackgroundAnimation 20s ease infinite;
 }
@@ -36,111 +31,3 @@
   gap: 10px;
   padding: 4% 2%;
 }
-
-.projects-container img {
-  width: 400px;
-  padding: 6%;
-}
-
-.projects-list-column {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-}
-
-.projects-container h1 {
-  font-size: 90px;
-  line-height: 74px;
-  margin: 0px;
-  padding-left: 20px;
-  align-self: flex-start;
-}
-
-.project-list ul {
-  list-style: none;
-  text-align: left;
-}
-
-.project-list li {
-  font-weight: bold;
-  cursor: pointer;
-  padding: 5px;
-  margin-left: -20px;
-  font-size: 25px;
-}
-
-.project-list li:hover {
-  color: #fed52e;
-}
-
-.project-list li.selected {
-  color: #fed52e;
-}
-
-.project-details-container {
-  display: flex;
-  background-color: #2b0f5927;
-  border-top-right-radius: 80px;
-  border-bottom-left-radius: 80px;
-  border: solid 1.5px #3b374023;
-  width: 900px;
-  gap: 20px;
-  align-items: flex-start;
-  justify-content: center;
-  margin: auto;
-  padding: 20px;
-}
-
-.project-details {
-  align-items: flex-start;
-  justify-content: center;
-  margin: auto;
-}
-
-
-.project-details-container:hover {
-  background-color: #4745456e;
-  /* box-shadow: 0 0 50px #ffffff2f; */
-  cursor: pointer;
-}
-
-.project-details-container p,
-h2 {
-  text-align: left;
-  padding-right: 25px;
-  padding-left: 30px;
-
-  color: rgb(255, 255, 255);
-}
-
-.project-details-container h2 {
-  font-size: 250%;
-  margin: 0;
-}
-
-.project-details-container:hover h2 {
-  color: rgb(254, 213, 46);
-
-}
-
-.project-details-container p {
-  font-size: 120%;
-}
-
-.project-details-left-column {
-  flex: 1;
-  width: 50%;
-}
-
-.project-details-right-column {
-  flex: 1;
-  width: 50%;
-}
-
-/* .ChemEd {
-
-}
-
-.EOL img{
-
-} */
