@@ -42,20 +42,20 @@ const Projects = () => {
 
   return (
     <div id="projects" className="projects projects-container">
-      <ProjectList projects={projects} onSelectProject={handleSelectProject} />
-      <SwitchTransition>
-        <CSSTransition
-          key={selectedProject.id}
-          classNames='fade'
-          timeout={500}
-        >
-          <div className='project-details'>
-            {selectedProject && (
-              <ProjectDetails project={selectedProject} />
-            )}
-          </div>
-        </CSSTransition>
-      </SwitchTransition>
+        <ProjectList projects={projects} onSelectProject={handleSelectProject} />
+        <SwitchTransition>
+          <CSSTransition
+            key={selectedProject.id}
+            classNames='fade'
+            timeout={500}
+          >
+            <div className='project-details'>
+              {selectedProject && (
+                <ProjectDetails project={selectedProject} />
+              )}
+            </div>
+          </CSSTransition>
+        </SwitchTransition>
     </div>
   );
 };

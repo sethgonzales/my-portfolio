@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ProjectList.css';
-
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import 'animate.css/animate.min.css';
 
 const ProjectList = ({ projects, onSelectProject }) => {
   const [selectedProjectId, setSelectedProjectId] = useState(projects[0].id);
@@ -13,7 +14,9 @@ const ProjectList = ({ projects, onSelectProject }) => {
   return (
     <div className="projects-container">
       <div className="projects-list-column">
-        <h1>Projects</h1>
+        <AnimationOnScroll animateIn='animate__fadeInDown' >
+          <h1>Projects</h1>
+        </AnimationOnScroll>
         <div className="project-list">
           <ul>
             {projects.map((project) => (

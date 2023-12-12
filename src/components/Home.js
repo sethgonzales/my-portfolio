@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import AtomAnimation from './AtomAnimation';
 
+
 const Home = () => {
   return (
     <div id="home" className="home">

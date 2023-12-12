@@ -7,6 +7,7 @@
   height: 100vh;
   display: flex;
   overflow: hidden;
+  position: relative;
 }
 
 .home h1 {
@@ -61,13 +62,4 @@
   z-index: 1;
 }
 
-/* Media query to switch the order on smaller screens */
-/* @media screen and (max-width: 768px) {
-  .left-column {
-    order: 2; 
-  }
 
-  .right-column {
-    order: 1; 
-  }
-} */
