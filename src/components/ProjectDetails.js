@@ -20,10 +20,10 @@ const ProjectDetails = ({ project }) => {
         <h2>{project.title}</h2>
         <p>{project.description}</p>
         <div className='project-links'>
-          <a href={project.hostingURL} className='project-link'>
+          <a href={project.hostingURL} className='project-link' target="_blank">
             Open Application
           </a>
-          <a href={project.github} className='project-link'>
+          <a href={project.github} className='project-link' target="_blank">
             GitHub
           </a>
         </div>
