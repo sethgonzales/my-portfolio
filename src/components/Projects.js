@@ -14,7 +14,7 @@ const Projects = () => {
       title: 'ChemEd Simulations',
       image: ChemEdSimulations,
       description: 'Inspired by my time in the classroom, ChemEd is an educational platform for students to interact with simulations that explore scientific phenomenon.',
-      github: 'https://github.com/sethgonzales/capstone', //update capstone github name
+      github: 'https://github.com/sethgonzales/ChemEd_Simulations', //update capstone github name
       hostingURL: 'https://chemed-6a31a.web.app/',
       code: ["JS", "React", "Firestore", "CSS", "HTML"]
     },
@@ -25,7 +25,7 @@ const Projects = () => {
       image: EOL,
       description: "Epicodus Online is a recreation of AOL's Instant Messenger. SignalR is used for real-time messaging functionality in public and private chat rooms.",
       github: 'https://github.com/sethgonzales/Eol.Solution',
-      hostingURL: '', //update this
+      hostingURL: 'https://eol-app.onrender.com',
       code: ["C#", "SignalR", "ASP.NET", "CSS", "HTML"]
 
     },
