@@ -1,12 +1,72 @@
+/* Demos.css */
+
 .demos {
- height: 50vh;
- width: auto;
-margin: 40px 200px 0 200px;
+    /* Your general styles for the demos container */
+    height: 50vh;
+    width: auto;
+    margin: 50px 200px 0 200px;
+}
+
+.demo-gif-container {
+    /* Styles for the container when the carousel is enabled */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
 }
 
 .demo-gif {
-    height: 250px;
+    /* Styles for individual GIFs when the carousel is enabled */
+    max-width: 100%;
+    height: 300px;
     margin: 10px;
-} 
+}
 
- 
+.slick-prev,
+.slick-next {
+    z-index: 1;
+    /* Ensure arrows stay on top of the slides */
+}
+
+/* Media query for smaller carousel */
+@media screen and (max-width: 1551px) {
+    .demos {
+        margin: 50px 100px 0 100px;
+    }
+
+    .demo-gif {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 755px) and (max-width: 992px) {
+    .demos {
+        margin: 50px;
+    }
+
+    .demo-gif {
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 689px) and (max-width: 755px) {
+    .demo-gif {
+        height: 100px;
+    }
+}
+
+/* Media query to disable carousel */
+@media screen and (max-width: 689px) {
+    .demo-gif-container {
+        display: flex;
+    }
+
+    .demos {
+        margin: 20px;
+    }
+
+    .demo-gif {
+        height: 100px;
+    }
+}

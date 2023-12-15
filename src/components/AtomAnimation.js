@@ -33,7 +33,7 @@ const AtomAnimation = () => {
       rings.push({ mesh: ringMesh, speed: rotationSpeeds[i] });
     }
 
-    // Set up anim ation loop for ring rotation
+    // Set up anim action loop for ring rotation
     const animate = () => {
       requestAnimationFrame(animate);
 

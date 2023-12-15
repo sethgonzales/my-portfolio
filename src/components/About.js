@@ -43,7 +43,7 @@ const About = () => {
             </p><br />
 
             <p>
-              In the classroom, I thrived on mentoring students and empowering them through inquiry-based education, all while occasionally showcasing the marvels of a highly exothermic, product favored reaction (aka <em>explosive</em> demonstrations).
+              In the classroom, I thrived on mentoring students and empowering them through inquiry-based education, all while occasionally showcasing the marvels of a highly exothermic, product favored reaction (aka <span className='fire-text'><em>explosive</em> demonstrations</span>).
             </p><br />
 
             <p>

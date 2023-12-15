@@ -1,5 +1,9 @@
-
 /* ---------------- Project Details Container ---------------- */
+@keyframes rollout {
+  0% { transform: translateX(100px); }
+  100% { transform: none; }
+}
+
 .project-details-container {
   align-items: center;
   justify-content: center; 
@@ -14,6 +18,10 @@
   gap: 20px;
   box-shadow: 0 0 50px #ffffff17;
   transition: background-color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+}
+
+.project-details {
+  animation: rollout 0.5s ease-in-out;
 }
 
 .project-details {
@@ -44,7 +52,6 @@
   align-items: center;
   justify-content: center; 
   padding: 4px;
-
 }
 
 .code-tag {

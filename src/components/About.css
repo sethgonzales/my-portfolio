@@ -1,12 +1,44 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
+@keyframes colorChange {
+  0% {
+    color: orange;
+  }
+
+  33.33% {
+    color: red;
+  }
+
+  66.66% {
+    color: yellow;
+  }
+
+  100% {
+    color: orange;
+  }
+}
+
+@keyframes waveMotion {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .about {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
   align-items: center;
   padding: 0 50px;
+  margin: 40px 0;
 }
 
 .about-content {
@@ -99,7 +131,7 @@
 
 .stars-container {
   position: absolute;
-  width: 100%;
+  width: 70%;
   height: 100%;
   overflow: hidden;
   z-index: -1;
@@ -107,7 +139,7 @@
 
 .stars {
   position: absolute;
-  width: 100%;
+  width: 70%;
   height: 100%;
   pointer-events: none;
   z-index: -1;
@@ -115,19 +147,19 @@
 
 .star1 {
   top: 120px;
-  left: 75px;
+  left: 70px;
   font-size: medium;
 }
 
 .star2 {
   top: 100px;
-  left: 55px;
+  left: 50px;
   font-size: small;
 }
 
 .star3 {
   top: 140px;
-  left: 55px;
+  left: 50px;
   font-size: larger;
 }
 
@@ -136,4 +168,185 @@
   position: absolute;
   color: #fff;
   animation: twinkle 2s linear infinite alternate;
+}
+
+.fire-text {
+  animation-name: colorChange 6s infinite;
+  animation-timing-function: linear;
+  display: inline-block;
+  animation-delay: 0s;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  position: relative;
+  display: inline-block;
+  animation-name: waveMotion;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1550px) {
+  .about-left-column img {
+    width: 250px;
+  }
+
+  .connection-link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .welcome {
+    font-size: 250%;
+  }
+
+  .about-story p {
+    font-size: 20px;
+  }
+
+  .star1 {
+    top: 120px;
+    left: 40px;
+    font-size: medium;
+  }
+
+  .star2 {
+    top: 100px;
+    left: 20px;
+    font-size: small;
+  }
+
+  .star3 {
+    top: 140px;
+    left: 20px;
+    font-size: larger;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1250px) {
+  .about-left-column img {
+    width: 220px;
+  }
+
+  .connection-links {
+    gap: 35px;
+  }
+
+  .connection-link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .welcome {
+    font-size: 210%;
+  }
+
+  .about-story p {
+    font-size: 20px;
+  }
+
+  .star1 {
+    top: 100px;
+    left: 30px;
+  }
+
+  .star2 {
+    top: 80px;
+    left: 10px;
+    font-size: small;
+  }
+
+  .star3 {
+    top: 120px;
+    left: 10px;
+  }
+}
+
+
+/* Media query for medium devices (e.g., tablets) */
+@media screen and (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-left-column,
+  .about-right-column {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .connection-links {
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .connection-link {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about-left-column img {
+    margin-top: 80px;
+    width: 40%;
+    margin-bottom: 20px;
+    border-top-left-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+  }
+
+  .welcome {
+    font-size: 180%;
+  }
+
+  .about-story p {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Media query for small devices (e.g., phones) */
+@media screen and (max-width: 576px) {
+
+  .connection-links {
+    margin-top: 20px;
+  }
+
+  .connection-link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .about-left-column img {
+    margin-top: 60px;
+    width: 140px;
+    margin-bottom: 10px;
+    border-top-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+  }
+
+  .welcome {
+    font-size: 120%;
+  }
+
+  .about-story p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+
+  .star1 {
+    top: 60px;
+    left: 15px;
+  }
+
+  .star2 {
+    top: 40px;
+    left: 0px;
+    font-size: small;
+  }
+
+  .star3 {
+    top: 80px;
+    left: 0px;
+  }
 }
