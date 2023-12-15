@@ -2,7 +2,7 @@
 
 @keyframes colorChange {
   0% {
-    color: orange;
+    color: #be7b00;
   }
 
   33.33% {
@@ -10,7 +10,7 @@
   }
 
   66.66% {
-    color: yellow;
+    color: #ffd900;
   }
 
   100% {
@@ -19,18 +19,15 @@
 }
 
 @keyframes waveMotion {
-  0% {
+  0%, 100% {
     transform: translateY(0);
   }
-
   50% {
-    transform: translateY(-5px);
-  }
-
-  100% {
-    transform: translateY(0);
+    transform: translateY(-2px);
   }
 }
+
+
 
 .about {
   /* height: 100vh; */
@@ -170,20 +167,20 @@
   animation: twinkle 2s linear infinite alternate;
 }
 
+/* Apply the wave animation to each letter */
 .fire-text {
-  animation-name: colorChange 6s infinite;
-  animation-timing-function: linear;
   display: inline-block;
-  animation-delay: 0s;
-  transform-origin: 50% 50%;
-  animation-fill-mode: forwards;
   position: relative;
-  display: inline-block;
-  animation-name: waveMotion;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  font-size: 24px; /* Adjust the font size as needed */
 }
+
+/* Apply the animation delay to each letter */
+.fire-text span {
+  display: inline-block;
+  animation: colorChange 1s infinite linear, waveMotion 1s infinite ease-in-out;
+  animation-delay: calc(0.1s * var(--index)); /* Adjust the delay timing */
+}
+
 
 @media screen and (min-width: 1250px) and (max-width: 1550px) {
   .about-left-column img {
