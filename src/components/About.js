@@ -74,7 +74,7 @@ const About = () => {
             </p><br />
 
             <p>
-              Transitioning into software development, I bring a unique blend of communication, problem-solving, and leadership skills. I am eager to apply my expertise grow within a collaborative team.
+              Transitioning into software development, I bring a unique blend of communication, problem-solving, and leadership skills. I am eager to apply my expertise and grow within a collaborative team.
             </p><br />
 
             <p>
