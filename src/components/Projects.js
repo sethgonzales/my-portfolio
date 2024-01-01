@@ -20,7 +20,7 @@ const Projects = () => {
       className: 'ChemEd',
       title: 'ChemEd Simulations',
       image: [ChemEdSimulations, ChemEdUse, ChemEdSimulations2, ChemEdUse2],
-      description: 'Inspired by my time in the classroom, ChemEd is an educational platform for students to interact with simulations that explore scientific phenomenon.',
+      description: 'Inspired by my time in the classroom, ChemEd Simulations is an educational platform for students to interact with models that explore scientific phenomenon.',
       github: 'https://github.com/sethgonzales/ChemEd_Simulations', 
       hostingURL: 'https://chemed-6a31a.web.app/',
       code: ["JS", "React", "Firestore", "CSS", "HTML"]

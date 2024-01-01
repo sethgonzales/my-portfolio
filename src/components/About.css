@@ -243,7 +243,8 @@
     font-size: 210%;
   }
 
-  .about-story p {
+  .about-story p,
+  .fire-text {
     font-size: 20px;
   }
 
@@ -301,8 +302,9 @@
     font-size: 180%;
   }
 
-  .about-story p {
-    font-size: 18px;
+  .about-story p,
+  .fire-text {
+    font-size: 20px;
     margin-bottom: 5px;
   }
 }
@@ -331,7 +333,8 @@
     font-size: 120%;
   }
 
-  .about-story p {
+  .about-story p,
+  .fire-text {
     font-size: 14px;
     margin-bottom: 5px;
     text-align: justify;
