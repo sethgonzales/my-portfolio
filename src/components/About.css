@@ -1,3 +1,4 @@
+/* About.css */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 @keyframes colorChange {
@@ -19,9 +20,12 @@
 }
 
 @keyframes waveMotion {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-2px);
   }
@@ -171,14 +175,16 @@
 .fire-text {
   display: inline-block;
   position: relative;
-  font-size: 24px; /* Adjust the font size as needed */
+  font-size: 24px;
+  /* Adjust the font size as needed */
 }
 
 /* Apply the animation delay to each letter */
 .fire-text span {
   display: inline-block;
   animation: colorChange 1s infinite linear, waveMotion 1s infinite ease-in-out;
-  animation-delay: calc(0.1s * var(--index)); /* Adjust the delay timing */
+  animation-delay: calc(0.1s * var(--index));
+  /* Adjust the delay timing */
 }
 
 
@@ -317,8 +323,8 @@
     margin-top: 60px;
     width: 140px;
     margin-bottom: 10px;
-    border-top-left-radius: 20px 20px;
-    border-bottom-right-radius: 20px 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .welcome {
@@ -346,4 +352,14 @@
     top: 80px;
     left: 0px;
   }
+}
+
+.demo-link {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.demo-link:hover {
+  cursor: pointer;
+  color: #fed52e;
 }

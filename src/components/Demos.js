@@ -1,3 +1,4 @@
+//Demos.js
 import React, { useEffect, useState } from 'react';
 import './Demos.css';
 import Slider from "react-slick";
@@ -32,7 +33,7 @@ const Demos = () => {
 
   if (isCarouselDisabled) {
     return (
-      <div className='demos'>
+      <div className='demos' id='demos'>
         <div className='demo-gif-container'>
           <img alt='Me on Fire' src={firehands} className='demo-gif' />
           <img alt='Electrocuting Pickle' src={pickle} className='demo-gif' />
@@ -48,7 +49,7 @@ const Demos = () => {
   }
 
   const settings = {
-    centerMode: true,
+    centerMode: false,
     dots: false,
     infinite: true,
     speed: 200,

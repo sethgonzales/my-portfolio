@@ -29,6 +29,13 @@
     /* Ensure arrows stay on top of the slides */
 }
 
+.demo-gif:after,
+.demo-gif:active,
+.demo-gif:focus {
+  border: 2px solid #fed52e; 
+  outline: none; /* To remove the default outline */
+}
+
 /* Media query for smaller carousel */
 @media screen and (max-width: 1551px) {
     .demos {

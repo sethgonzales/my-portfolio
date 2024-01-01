@@ -1,3 +1,4 @@
+/* ProjectDetails.css */
 /* ---------------- Project Details Container ---------------- */
 @keyframes rollout {
   0% { transform: translateX(100px); }
@@ -20,14 +21,13 @@
   transition: background-color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
 }
 
-.project-details {
-  animation: rollout 0.5s ease-in-out;
-}
 
 .project-details {
   align-items: flex-start;
   justify-content: center;
+  padding: 1em;
   margin: auto;
+  animation: rollout 0.5s ease-in-out;
 }
 
 .project-details-container:hover {
@@ -36,22 +36,46 @@
 }
 
 /* ---------------- Project Details Left Side ---------------- */
-
 .project-details-left-column {
-  flex: 1;
-  width: 50%;
+  position: relative;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  height: 19em;
 }
 
-.project-details-container img {
+.proj-details-img {
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+}
+
+.proj-details-img img {
+  position: absolute;
   width: 90%;
-  padding: 4%;
+  transform: translateX(-50%); 
+  left: 50%; 
+  opacity: 0;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-top: 2em;
+  z-index: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.proj-details-img img.active {
+  opacity: 1;
+  z-index: 2;
 }
 
 .code-used {
   display: flex;
   align-items: center;
   justify-content: center; 
+  width: 100%;
   padding: 4px;
+  margin: 1em 0;
+  gap: 10px;
 }
 
 .code-tag {
@@ -61,8 +85,7 @@
   border: solid 1.5px #615a6963;
   border-radius: 20px;
   color: white;
-  padding: 4px;
-  margin-right: 10px;
+  padding: 5px;
 }
 
 .code-tag:hover  {
@@ -71,7 +94,7 @@
   cursor: default;
 }
 
-/* ---------------- Project Details Left Side ---------------- */
+/* ---------------- Project Details Right Side ---------------- */
 
 .project-details-right-column {
   flex: 1;
@@ -102,9 +125,13 @@ h2 {
 
 
 .project-links {
-  width: 90%;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
   padding: 10px;
+  gap: 15px;
 }
 
 .project-link {
@@ -114,7 +141,6 @@ h2 {
   border-radius: 3px;
   color: white;
   padding: 4px;
-  margin: 10px;
   text-decoration: none;
 }
 

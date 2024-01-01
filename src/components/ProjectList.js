@@ -1,3 +1,4 @@
+//ProjectList.js
 import React, { useState } from 'react';
 import './ProjectList.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
@@ -14,7 +15,7 @@ const ProjectList = ({ projects, onSelectProject }) => {
   return (
     <div className="projects-container">
       <div className="projects-list-column">
-        <AnimationOnScroll animateIn='animate__fadeInDown' >
+        <AnimationOnScroll animateIn='animate__fadeInDown' animateOnce='true'>
           <h1>Projects</h1>
         </AnimationOnScroll>
         <div className="project-list">
