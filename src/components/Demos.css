@@ -30,7 +30,7 @@
 }
 
 .demo-gif:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     border: 2px solid #fed52e;
 }
 
@@ -51,7 +51,7 @@
     }
 
     .demo-gif {
-        height: 150px;
+        height: 200px;
     }
 }
 
@@ -72,6 +72,11 @@
     }
 
     .demo-gif {
-        height: 100px;
+        height: 140px;
     }
+
+    .demo-gif:hover {
+        transform: scale(1.15);
+    }
+    
 }
