@@ -40,12 +40,23 @@ const ProjectDetails = ({ project }) => {
         <h2>{project.title}</h2>
         <p>{project.description}</p>
         <div className='project-links'>
-          <a href={project.hostingURL} className='project-link' target="_blank">
-            Open Application
-          </a>
-          <a href={project.github} className='project-link' target="_blank">
-            GitHub
-          </a>
+          {project.hostingURL && (
+            <a href={project.hostingURL} className='project-link' target="_blank">
+              Open Application
+            </a>
+          )}
+          {project.github ? (
+            <a href={project.github} className='project-link' target="_blank">
+              GitHub
+            </a>
+          )
+            :
+            (
+              <a href={project.gitlab} className='project-link' target="_blank">
+                GitLab
+              </a>
+            )
+          }
         </div>
       </div>
     </div >

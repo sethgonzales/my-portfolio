@@ -19,15 +19,34 @@ const ProjectList = ({ projects, onSelectProject }) => {
           <h1>Projects</h1>
         </AnimationOnScroll>
         <div className="project-list">
+          <h2>personal</h2>
           <ul>
             {projects.map((project) => (
-              <li
-                key={project.id}
-                onClick={() => handleProjectClick(project.id)}
-                className={selectedProjectId === project.id ? 'selected' : ''}
-              >
-                {project.title}
-              </li>
+              project.personalProject ? (
+                <li
+                  key={project.id}
+                  onClick={() => handleProjectClick(project.id)}
+                  className={selectedProjectId === project.id ? 'selected' : ''}
+                >
+                  {project.title}
+                </li>
+              ) : null
+            ))}
+          </ul>
+        </div>
+        <div className="project-list">
+          <h2>professional</h2>
+          <ul>
+            {projects.map((project) => (
+              !project.personalProject ? (
+                <li
+                  key={project.id}
+                  onClick={() => handleProjectClick(project.id)}
+                  className={selectedProjectId === project.id ? 'selected' : ''}
+                >
+                  {project.title}
+                </li>
+              ) : null
             ))}
           </ul>
         </div>

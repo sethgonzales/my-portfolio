@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   width: 400px;
+  position: relative;
 }
 
 .projects-container h1 {
@@ -14,9 +15,21 @@
   align-self: flex-start;
 }
 
+.project-list h2 {
+  font-size: 18px;
+  color: #ffffff5c;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  position: absolute; 
+  left: -30px; 
+  margin-top: 28px;
+}
+
 .project-list ul {
   list-style: none;
   text-align: left;
+  margin-left: 20px; /* Adjust indentation */
+
 }
 
 .project-list li {
