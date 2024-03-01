@@ -61,7 +61,6 @@ const Projects = () => {
       image: [VinoSeeker, SipList, Sip],
       description: "VinoSeeker by SimBco is an application for wine enthusiasts to connect wineries and share ratings and notes on wines. As an intern for SimBco, I worked on implementing Sip functionality for Users and Admin features for Industry clients.",
       github: null,
-      gitlab: 'https://gitlab.com/wyno',
       hostingURL: 'https://vinoseeker.com/',
       code: ["JS", "React", "Feathers", "Ionic", "Tailwind"],
       personalProject: false

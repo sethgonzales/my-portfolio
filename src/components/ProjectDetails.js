@@ -45,18 +45,11 @@ const ProjectDetails = ({ project }) => {
               Open Application
             </a>
           )}
-          {project.github ? (
+          {project.github && (
             <a href={project.github} className='project-link' target="_blank">
               GitHub
             </a>
-          )
-            :
-            (
-              <a href={project.gitlab} className='project-link' target="_blank">
-                GitLab
-              </a>
-            )
-          }
+          )}
         </div>
       </div>
     </div >
