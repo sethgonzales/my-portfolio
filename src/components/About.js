@@ -29,17 +29,17 @@ const About = () => {
           <img alt='Seth Gonzales' src={HeadShot} className='headshot' />
           <div className='connection-links'>
             <AnimationOnScroll animateIn='animate__rollIn' animateOnce='true'>
-              <a href="mailto:sethgonzales157@gmail.com?subject=Hello%20Seth!" className='connection-link'>
+              <a href="mailto:sethgonzales157@gmail.com?subject=Hello%20Seth!" className='connection-link' target="_blank" rel="noreferrer">
                 <i className='fa fa-envelope'></i>
               </a>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__rollIn' delay={100} animateOnce='true'>
-              <a href="https://www.linkedin.com/in/seth-gonzales/" className='connection-link'>
+              <a href="https://www.linkedin.com/in/seth-gonzales/" className='connection-link' target="_blank" rel="noreferrer">
                 <i className='fa fa-linkedin'></i>
               </a>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__rollIn' delay={200} animateOnce='true'>
-              <a href="https://github.com/sethgonzales" className='connection-link'>
+              <a href="https://github.com/sethgonzales" className='connection-link' target="_blank" rel="noreferrer">
                 <i className='fa fa-github'></i>
               </a>
             </AnimationOnScroll>
@@ -55,7 +55,7 @@ const About = () => {
             </p><br />
 
             <p>
-              In the classroom, I thrived on mentoring students and empowering them through inquiry-based education, all while occasionally showcasing the marvels of highly exothermic, product favored reactions 
+              In the classroom, I thrived on mentoring students and empowering them through inquiry-based education, and occasionally showcasing the marvels of highly exothermic, product favored reactions 
               <Link
                 to="demos"
                 duration={800}
@@ -74,11 +74,11 @@ const About = () => {
             </p><br />
 
             <p>
-              As a developer, I bring a unique blend of communication, problem-solving, and leadership skills. I am eager to apply my expertise and grow within a collaborative team.
+              As a developer, I bring strong communication, problem-solving, and leadership skills. I am eager to apply my expertise within a collaborative team.
             </p><br />
 
             <p>
-              I aim to learn, contribute, and craft impactful solutions that resonate.
+              I aim to continually learn and grow throughout my life.
             </p>
           </div>
         </div>

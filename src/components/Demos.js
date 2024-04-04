@@ -12,6 +12,8 @@ import burnchip from './../img/burnchip.gif';
 import pumpkin from './../img/pumpkin.gif';
 import Hballoon from './../img/Hballoon.gif';
 import Mgribbon from './../img/Mgribbon.gif';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import 'animate.css/animate.min.css';
 
 const Demos = () => {
   const [isCarouselDisabled, setIsCarouselDisabled] = useState(false);
@@ -59,34 +61,36 @@ const Demos = () => {
   };
 
   return (
-    <div className='demos'>
-      <Slider {...settings}>
-        <div>
-          <img alt='Me on Fire' src={firehands} className='demo-gif' />
-        </div>
-        <div>
-          <img alt='Gummy Bear Redox' src={gummybear} className='demo-gif' />
-        </div>
-        <div>
-          <img alt='Me Breathing Fire' src={firebreath} className='demo-gif wide-gif' />
-        </div>
-        <div>
-          <img alt='Exploding Pumpkin' src={pumpkin} className='demo-gif' />
-        </div>
-        <div>
-          <img alt='Exploding Hydrogen Balloon' src={Hballoon} className='demo-gif' />
-        </div>
-        <div>
-          <img alt='Electrocuting Pickle' src={pickle} className='demo-gif' />
-        </div>
-        <div>
-          <img alt='Burning Chip Thermo' src={burnchip} className='demo-gif' />
-        </div>
-        <div>
-          <img alt='Burning Magnesium' src={Mgribbon} className='demo-gif' />
-        </div>
-      </Slider>
-    </div>
+    <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true'>
+      <div className='demos'>
+        <Slider {...settings}>
+          <div>
+            <img alt='Me on Fire' src={firehands} className='demo-gif' />
+          </div>
+          <div>
+            <img alt='Gummy Bear Redox' src={gummybear} className='demo-gif' />
+          </div>
+          <div>
+            <img alt='Me Breathing Fire' src={firebreath} className='demo-gif wide-gif' />
+          </div>
+          <div>
+            <img alt='Exploding Pumpkin' src={pumpkin} className='demo-gif' />
+          </div>
+          <div>
+            <img alt='Exploding Hydrogen Balloon' src={Hballoon} className='demo-gif' />
+          </div>
+          <div>
+            <img alt='Electrocuting Pickle' src={pickle} className='demo-gif' />
+          </div>
+          <div>
+            <img alt='Burning Chip Thermo' src={burnchip} className='demo-gif' />
+          </div>
+          <div>
+            <img alt='Burning Magnesium' src={Mgribbon} className='demo-gif' />
+          </div>
+        </Slider>
+      </div>
+    </AnimationOnScroll>
   );
 };
 

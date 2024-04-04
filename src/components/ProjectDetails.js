@@ -41,12 +41,12 @@ const ProjectDetails = ({ project }) => {
         <p>{project.description}</p>
         <div className='project-links'>
           {project.hostingURL && (
-            <a href={project.hostingURL} className='project-link' target="_blank">
+            <a href={project.hostingURL} className='project-link' target="_blank" rel="noreferrer">
               Open Application
             </a>
           )}
           {project.github && (
-            <a href={project.github} className='project-link' target="_blank">
+            <a href={project.github} className='project-link' target="_blank" rel="noreferrer">
               GitHub
             </a>
           )}

@@ -17,7 +17,7 @@
 
 /* ---------------- Project Component General ---------------- */
 .projects {
-  background: linear-gradient(120deg, #044f376c, #12011a, #fc48486c);
+  background: linear-gradient(120deg, #4f60e23c, #12011a, #fc484849);
   background-size: 200% 200%;
   animation: BackgroundAnimation 20s ease infinite;
 }
@@ -136,7 +136,7 @@
   .project-details-container img {
     top: 0;
     width: 25em;
-  margin-top: auto;
+    margin-top: auto;
     padding: 1em;
   }
 
@@ -151,6 +151,7 @@
   .project-details-container h2 {
     font-size: 160%;
   }
+
   .project-details-container p,
   .project-details-container .project-links {
     font-size: 14px;

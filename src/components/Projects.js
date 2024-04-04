@@ -23,28 +23,17 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      className: 'ChemEd',
-      title: 'ChemEd Simulations',
-      image: [ChemEdSimulations, ChemEdUse, ChemEdSimulations2, ChemEdUse2],
-      description: 'Inspired by my time in the classroom, ChemEd Simulations is an educational platform for students to interact with models that explore scientific phenomenon.',
-      github: 'https://github.com/sethgonzales/ChemEd_Simulations',
-      hostingURL: 'https://chemed-6a31a.web.app/',
-      code: ["JS", "React", "Firestore", "CSS", "HTML"],
-      personalProject: true
+      className: 'VS',
+      title: 'VinoSeeker',
+      image: [VinoSeeker, SipList, Sip],
+      description: "VinoSeeker by SimBco is an application for wine enthusiasts to connect wineries and share ratings and notes on wines. As an intern for SimBco, I have worked on implementing Wine, Sip, and Flight functionality for users and industry clients.",
+      github: null,
+      hostingURL: 'https://vinoseeker.com/',
+      code: ["JS", "React", "Feathers", "Ionic", "Tailwind"],
+      personalProject: false
     },
     {
       id: 2,
-      className: 'EOL',
-      title: 'Epicodus Online',
-      image: [EOL, EOLUse, EOL2, EOLUse2],
-      description: "Epicodus Online (EOL) is a recreation of AOL's Instant Messenger. SignalR is used for real-time messaging functionality in public and private chat rooms.",
-      github: 'https://github.com/sethgonzales/Eol.Solution',
-      hostingURL: 'https://eol-app.onrender.com',
-      code: ["C#", "SignalR", "ASP.NET", "CSS", "HTML"],
-      personalProject: true
-    },
-    {
-      id: 3,
       className: 'HH',
       title: 'Humble Hectare',
       image: [ComingSoon, Corvallis, HHMushrooms],
@@ -55,16 +44,27 @@ const Projects = () => {
       personalProject: false
     },
     {
+      id: 3,
+      className: 'ChemEd',
+      title: 'ChemEd Simulations',
+      image: [ChemEdSimulations, ChemEdUse, ChemEdSimulations2, ChemEdUse2],
+      description: 'Inspired by my time in the classroom, ChemEd Simulations is an educational platform for students to interact with models that explore scientific phenomenon.',
+      github: 'https://github.com/sethgonzales/ChemEd_Simulations',
+      hostingURL: 'https://chemed-6a31a.web.app/',
+      code: ["JS", "React", "Firestore", "CSS", "HTML"],
+      personalProject: true
+    },
+    {
       id: 4,
-      className: 'VS',
-      title: 'VinoSeeker',
-      image: [VinoSeeker, SipList, Sip],
-      description: "VinoSeeker by SimBco is an application for wine enthusiasts to connect wineries and share ratings and notes on wines. As an intern for SimBco, I worked on implementing Sip functionality for Users and Admin features for Industry clients.",
-      github: null,
-      hostingURL: 'https://vinoseeker.com/',
-      code: ["JS", "React", "Feathers", "Ionic", "Tailwind"],
-      personalProject: false
-    }
+      className: 'EOL',
+      title: 'Epicodus Online',
+      image: [EOLUse, EOL, EOL2, EOLUse2],
+      description: "Epicodus Online (EOL) is a recreation of AOL's Instant Messenger. SignalR is used for real-time messaging functionality in public and private chat rooms.",
+      github: 'https://github.com/sethgonzales/Eol.Solution',
+      hostingURL: 'https://eol-app.onrender.com',
+      code: ["C#", "SignalR", "ASP.NET", "CSS", "HTML"],
+      personalProject: true
+    },
     // Add more projects...
   ];
 
